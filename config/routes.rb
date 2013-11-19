@@ -1,7 +1,7 @@
 SampleAppTwo::Application.routes.draw do
   #matches '/route' to the corresponding action in the StaticPages controller
 
-  get "users/new"
+  resources :users
 
   root to: 'static_pages#home'
 
